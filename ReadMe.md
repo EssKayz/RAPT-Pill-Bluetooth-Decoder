@@ -91,7 +91,7 @@ If you are using influxdb v2:
 
 If you are tracking only one pill, you can just update the example session below, else copy it and fill in the details for each session you would like to track.
 
-Mac Address: the mac address for your PILL - get this from the Rapt Portal 
+Mac Address: Mac Address of your Pill - found when you connect to it in the diagnostics page. You need to add 2 to the last set of digits e.g if the MAC address is 11-e3-1d-19-14 the address you put in the data.json is 11-e3-1d-19-16
 
 Session Name: name of the brew you are doing - better to have this be unique so it can be filtered properly in grafana
 
