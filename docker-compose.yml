@@ -1,0 +1,16 @@
+services:
+  decoder:
+    command: python3 /app/src/RaptPill_Decoder.py
+    build: .
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    volumes:
+      - /var/run/dbus:/var/run/dbus
+      - ./src:/app/src
